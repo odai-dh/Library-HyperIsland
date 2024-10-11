@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="btn-wrapper">
+            <button id="addBookBtn" class="add-book-btn" type="button">+</button>
+        </div>
+        
+        <aside id="toggleForm" class="form-area d-none">
+            <button id="closeBtn" class="close-btn" type="button">x</button>
+            <form action="#" method="get">
+
+                <label for="bookName">
+                    Book Name
+                    <input type="text" id="bookName" name="bookName" placeholder="Harry Potter" class="uppercase" required>
+                </label>
+
+                <label for="bookAuthor">
+                    Book Author
+                    <input type="text" id="bookAuthor" name="bookAuthor" placeholder="J. K. Rowling" required>
+                </label>
+
+                <label for="bookPages">
+                    Book Pages
+                    <input type="number" id="bookPages" min="0" name="bookPages" placeholder="e.x:223" required>
+                </label>
+
+                <label for="bookPageRead">
+                    Book Pages have been read?
+                    <input type="number" id="bookPageRead" min="0" name="bookPageRead" required>
+                </label>
+
+                
+                <fieldset class="form-group">
+                    <legend>Has the book been read?</legend>
+
+                    <label for="bookIsReadTrue">
+                        Yes
+                        <input type="radio" name="bookIsRead" id="bookIsReadTrue" value="true" required>
+                    </label>
+                    
+                    <label for="bookIsReadFalse">
+                        No
+                        <input type="radio" name="bookIsRead" id="bookIsReadFalse" value="false" required>
+                    </label>
+
+                </fieldset>
+
+                <button id="submitBtn" class="submit-btn" type="submit">ADD</button>
+            </form>
+        </aside>
+
+        <div class="book-container"></div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

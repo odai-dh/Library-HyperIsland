@@ -1,0 +1,195 @@
+:root {
+    --delftBlue: #3D405B;
+    --white: #ffffff;
+    --blue: #1b9aaa;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--delftBlue);
+    color: var(--white);
+}
+label {
+    display: block;
+    text-align: left;
+
+}
+input[type="text"], input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: 1px solid var(--delftBlue);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+input {
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: .25s all;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.d-none {
+    display: none;
+}
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: end;
+}
+.add-book-btn, .close-btn {
+    font-size: 1.5rem;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+}
+.close-btn {
+    position: relative;
+    bottom: 3%;
+    right: -75%;
+}
+.add-book-btn:hover, .close-btn:hover {
+    scale: 1.2;
+}
+.add-book-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    scale: 1.2;
+}
+.form-area {
+    width: 25%;
+    background-color: var(--white);
+    color: var(--delftBlue);
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    padding: 1.5rem;
+}
+.form-area form {
+    height: 100%;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem 0 1rem 0;
+    width: 75%;
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+}
+.form-group input {
+    margin: 0 .5rem;
+}
+.submit-btn {
+    width: 85%;
+    color: var(--white);
+    font-size: 1.1rem;
+    background-color: var(--delftBlue);
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    padding: .75rem 0;
+}
+.submit-btn:hover {
+    scale: 1.1;
+}
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.book {
+    background-color: var(--blue);
+    padding: 1rem;
+    height: 350px;
+    min-width: 30%;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.book-title {
+    margin: auto 0;
+}
+.legend{
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.delete-book {
+    background-color: #e74c3c; 
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.delete-book:hover {
+    background-color: #c0392b; 
+}
+
+.edit-book {
+    background-color: #2eb971; 
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.edit-book:hover {
+    background-color: #208c54; 
+}
+
+fieldset {
+    border: 1px solid #0d0f11; 
+    border-radius: 5px; 
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff; 
+}
+
+legend {
+    font-size: 1rem;
+    color: #000000; 
+    padding: 0 10px; 
+    background-color: #fff; 
+    border: 1px solid #000000; 
+    border-radius: 5px; 
+}
+::placeholder {
+    color: #354f534b;
+}
+label {
+    margin-right: 15px;
+}
+
+input[type="radio"] {
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
